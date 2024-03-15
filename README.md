@@ -67,6 +67,20 @@ Additional Documentation
 [ROS Tutorials](http://wiki.ros.org/ROS/Tutorials)
 
 ## Open Raspberry PI4 Serial Port
+Before you use serial port to communicate with microcontroller such as arduino Nano. You should to open and give permission for it.
+
+Open Serial Port : https://github.com/NonStopBle/PiAttachSerial
+
+Check Serial Port list : 
+
+```bash
+ls /dev/tty*
+```
+Give Permission :
+
+```bash
+sudo chmod a+rw /dev/ttyAMA0
+```
 
 ## Additional Software
 
