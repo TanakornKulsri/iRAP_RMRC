@@ -27,7 +27,7 @@ sudo apt install terminator
 ```
 
 ## Raspberry PI4 Setup
-For iRAP RMRC Robot we use raspberry PI4 ,that is embeaded computer .This section will explain how to setup it.
+For iRAP RMRC Robot we use raspberry PI4 ,that is embedded computer.This section will explain how to setup it.
 
 Ubuntu 20.04 Mate Image : https://releases.ubuntu-mate.org/20.04/arm64/
 
@@ -100,9 +100,11 @@ image_process : https://github.com/TanakornKulsri/iRAP_RMRC/tree/main/image_proc
 
 ### USB Camera Package 
 Documentation : http://wiki.ros.org/usb_cam
+
 Github : https://github.com/ros-drivers/usb_cam
 
 ### ROSSERIAL Package
 Documentation : http://wiki.ros.org/rosserial
+
 Github : https://github.com/ros-drivers/rosserial
 
