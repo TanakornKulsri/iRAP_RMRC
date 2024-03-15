@@ -66,6 +66,89 @@ Additional Documentation
 
 [ROS Tutorials](http://wiki.ros.org/ROS/Tutorials)
 
+## ROS Network Setup
+For setting your labtop to communicate with embedded computer(raspberry PI4) on robot .
+
+1. Set your labtop and raspberry Pi login in same network.
+   For example raspberry Pi(master) IP:192.168.1.100 and labtop(host) IP:192.168.1.32
+
+2. Open .bashrc file
+```bash
+nano ~/.bashrc
+```
+
+3. Add ROS_HOSTNAME and ROS_MASTER config to .bashrc file. In raspberry PI
+```bash
+export ROS_HOSTNAME=master_ip
+export ROS_MASTER_URI=http://master_ip:11311
+```
+
+In my case, I should replace master_ip to 192.168.1.100
+
+```bash
+export ROS_HOSTNAME=192.168.1.100
+export ROS_MASTER_URI=http://192.168.1.100:11311
+```
+
+4.Add ROS_HOSTNAME and ROS_MASTER config to .bashrc file. In laptop
+```bash
+export ROS_HOSTNAME=host_ip
+export ROS_MASTER_URI=http://master_ip:11311
+```
+
+In my case, I should replace master_ip to 192.168.1.100 and host_ip to 192.168.1.32
+
+```bash
+export ROS_HOSTNAME=192.168.1.32
+export ROS_MASTER_URI=http://192.168.1.100:11311
+```
+
+After set ROS_HOSTNAME and ROS_MASTER_URL you should to test 2 machine are communicated.
+
+In raspberry PI4(master)
+```bash
+roscore
+```
+
+output 
+```bash
+started roslaunch server http://localhost:33797/
+ros_comm version 1.16.0
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+
+NODES
+
+auto-starting new master
+process[master]: started with pid [8499]
+ROS_MASTER_URI=http://localhost:11311/
+
+setting /run_id to 512c6820-e2c2-11ee-99c3-8b837eacd76e
+process[rosout-1]: started with pid [8520]
+started core service [/rosout]
+```
+
+In your labtop
+```bash
+rosnode list
+```
+
+output 
+```bash
+/rosout
+```
+
+If you can call rosnode list in your labtop without roscore that mean your labtop and raspberry PI4 are set in same ROS network ,So you can communicate data between your labtop to raspberry PI ,for example velocity command ,filpper position or image.
+
+Additional Documentation : https://razbotics.wordpress.com/2018/01/23/ros-distributed-systems/
+
+
 ## Open Raspberry PI4 Serial Port
 Before you use serial port to communicate with microcontroller such as arduino Nano. You should to open and give permission for it.
 
@@ -82,7 +165,7 @@ Give Permission :
 sudo chmod a+rw /dev/ttyAMA0
 ```
 
-After open serial port ,you can send data from raspberry PI4(computer) to arduino Nano(microcontroller) from 
+After open serial port ,you can send data from raspberry PI4(computer) to arduino Nano(microcontroller) by using ROSSERIAL.
 
 ## Additional Software
 
