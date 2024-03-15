@@ -96,4 +96,13 @@ irap_webengine : https://github.com/NonStopBle/iRAP-WebEngine/
 
 ### Image Processing Package
 
-3.image_process : https://github.com/TanakornKulsri/iRAP_RMRC/tree/main/image_process
+image_process : https://github.com/TanakornKulsri/iRAP_RMRC/tree/main/image_process
+
+### USB Camera Package 
+Documentation : http://wiki.ros.org/usb_cam
+Github : https://github.com/ros-drivers/usb_cam
+
+### ROSSERIAL Package
+Documentation : http://wiki.ros.org/rosserial
+Github : https://github.com/ros-drivers/rosserial
+
