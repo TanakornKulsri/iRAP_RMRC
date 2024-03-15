@@ -36,6 +36,38 @@ Ubuntu 20.04 Mate Image : https://releases.ubuntu-mate.org/20.04/arm64/
 3. Install ROS Noetic (We recommend to install ROS-Base).
 4. Install additional software.
 
+## Create First ROS Workspace
+Press [ctrl+alt+t] for open terminal window.
+
+create workspace 
+```bash
+mkdir -p ~/rmrc_ws/src
+cd ~/rmrc_ws/
+catkin_make
+```
+After create workspace, you should to source workspace for use package in it.
+```bash
+source devel/setup.bash
+```
+
+For source this workspace every time you open terminal 
+```bash
+nano .bashrc
+```
+
+Add Command to .bashrc file
+```bash
+source ~/rmrc_ws/devel/setup.bash
+```
+
+Additional Documentation 
+
+[Creating a workspace for catkin](http://wiki.ros.org/catkin/Tutorials/create_a_workspace)
+
+[ROS Tutorials](http://wiki.ros.org/ROS/Tutorials)
+
+## Open Raspberry PI4 Serial Port
+
 ## Additional Software
 
 ### Library and Example Code for iRAP Extension Board
@@ -50,4 +82,4 @@ irap_webengine : https://github.com/NonStopBle/iRAP-WebEngine/
 
 ### Image Processing Package
 
-3.image_process : 
+3.image_process : https://github.com/TanakornKulsri/iRAP_RMRC/tree/main/image_process
