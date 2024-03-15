@@ -36,6 +36,8 @@ Ubuntu 20.04 Mate Image : https://releases.ubuntu-mate.org/20.04/arm64/
 3. Install ROS Noetic (We recommend to install ROS-Base).
 4. Install additional software.
 
+[Unbootable Raspbery PI4 new model problem](https://forums.raspberrypi.com/viewtopic.php?t=351924)
+
 ## Create First ROS Workspace
 Press [ctrl+alt+t] for open terminal window.
 
