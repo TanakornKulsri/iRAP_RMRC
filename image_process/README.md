@@ -33,4 +33,6 @@ rosrun rqt_image_view rqt_image_view
 ```
 change topic to /detect_marker/image_raw/compressed
 
-output
+output :
+
+![Alt text](https://github.com/TanakornKulsri/iRAP_RMRC/blob/main/image_process/output.png)
