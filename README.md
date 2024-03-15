@@ -2,11 +2,11 @@
 Description about iRAP RMRC Robot
 
 ## Ubuntu Setup
-Install Ubuntu : 
-[Ubuntu 20.04 Desktop Image](https://releases.ubuntu.com/focal/)
+Ubuntu 20.04 Desktop Image : https://releases.ubuntu.com/focal/
 
-Install ROS : 
-[ROS Noetic](http://wiki.ros.org/noetic/Installation/Ubuntu)
+Instruction for Install Ubuntu : https://ubuntu.com/tutorials/install-ubuntu-desktop
+
+Install ROS Noetic : http://wiki.ros.org/noetic/Installation/Ubuntu
 
 ### Recommend Software
 After setup ubuntu on laptop we recommend to install software ,that will support software development on linux OS
@@ -27,18 +27,27 @@ sudo apt install terminator
 ```
 
 ## Raspberry PI4 Setup
-Explain Raspberry PI4 setup
+For iRAP RMRC Robot we use raspberry PI4 ,that is embeaded computer .This section will explain how to setup it.
+
+Ubuntu 20.04 Mate Image : https://releases.ubuntu-mate.org/20.04/arm64/
+
+1. Install ubuntu-mate-20.04.1-desktop-arm64+raspi.img.xz.
+2. Flash image file to SD card.
+3. Install ROS Noetic (We recommend to install ROS-Base).
+4. Install additional software.
 
 ## Additional Software
 
-Library and Example Code for iRAP Extension Board
+### Library and Example Code for iRAP Extension Board
 
-1.iRAP_RMRCBreakout : 
+iRAP_RMRCBreakout : https://github.com/mtikkyu/iRAP_RMRCBreakout
 
-Web Interface Package
+### Web Interface Package
 
-2.irap_webengine : 
+irap_mini_rescue_GUI : https://github.com/NonStopBle/iRAP-Minirescue-GUI
 
-Image Processing Package
+irap_webengine : https://github.com/NonStopBle/iRAP-WebEngine/
+
+### Image Processing Package
 
 3.image_process : 
