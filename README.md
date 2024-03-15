@@ -4,9 +4,9 @@ Description about iRAP RMRC Robot
 ## Ubuntu Setup
 Ubuntu 20.04 Desktop Image : https://releases.ubuntu.com/focal/
 
-Instruction for Install Ubuntu : https://ubuntu.com/tutorials/install-ubuntu-desktop
+Install Ubuntu Documentation : https://ubuntu.com/tutorials/install-ubuntu-desktop
 
-Install ROS Noetic : http://wiki.ros.org/noetic/Installation/Ubuntu
+Install ROS Noetic Documentation : http://wiki.ros.org/noetic/Installation/Ubuntu
 
 ### Recommend Software
 After setup ubuntu on laptop we recommend to install software ,that will support software development on linux OS
