@@ -1,0 +1,10 @@
+<launch>
+    <!-- <node pkg="usb_cam" type="usb_cam_node" name="usb_camera">
+        <param name="video_device" value="/dev/video0"/>
+    </node> -->
+    <include file="$(find image_processing)/launch/usb_cam.launch"/>
+    <node pkg="image_process" type="marker_detect.py" name="detect_marker" output="screen"/>
+    <include file="$(find rosserial_python)/launch/rosserial.launch"/>
+    <!-- <include file="$(find image_process)/launch/marker_detect.launch"/> -->
+    
+</launch>
