@@ -82,6 +82,8 @@ Give Permission :
 sudo chmod a+rw /dev/ttyAMA0
 ```
 
+After open serial port ,you can send data from raspberry PI4(computer) to arduino Nano(microcontroller) from 
+
 ## Additional Software
 
 ### Library and Example Code for iRAP Extension Board
