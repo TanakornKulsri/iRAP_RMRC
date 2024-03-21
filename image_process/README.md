@@ -11,7 +11,7 @@ cd rmrc_ws/src
 
 clone package 
 ```bash
-git clone git@github.com:TanakornKulsri/iRAP_RMRC.git iRAP_RMRC/image_process
+git clone https://github.com/TanakornKulsri/iRAP_RMRC.git iRAP_RMRC/image_process
 ```
 This command will install iRAP_RMRC directory to your worksapce and image_process is sub-directory in it.
 
