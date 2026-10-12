@@ -1,5 +1,5 @@
 <launch>
-  <arg name="image_view" default="false" />
+  <arg name="image_view" default="true" />
 
   <node name="usb_cam" pkg="usb_cam" type="usb_cam_node" output="screen" >
       <rosparam command="load" file="$(find image_process)/config/usb_cam.yml"/>

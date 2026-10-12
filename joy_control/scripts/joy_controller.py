@@ -16,7 +16,7 @@ if __name__ == "__main__" :
     rospy.init_node("joy_controller")
     rospy.loginfo(":: Joy Controller is Already ::")
     joy_sub = rospy.Subscriber("gui/output/joy",Joy,joy_callback)
-    left_servo_pub = rospy.Publisher("a_value",Int16,queue_size=10)
+    left_servo_pub = rospy.Publisher("left_servo_cmd",Int16,queue_size=10)
 
     rate = rospy.Rate(10)
 
@@ -25,10 +25,10 @@ if __name__ == "__main__" :
             if recived_joy is not None :
                 # print(recived_joy)
                 if recived_joy.buttons[12] == 1 : 
-                    servo_position = servo_position + 1 
+                    servo_position = servo_position + 5 
 
                 elif recived_joy.buttons[13] == 1 : 
-                    servo_position = servo_position - 1 
+                    servo_position = servo_position - 5 
 
                 if servo_position >= 180 :
                     servo_position = 180 
